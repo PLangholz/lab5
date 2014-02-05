@@ -23,14 +23,18 @@
 </head>
 
 <body>
+
 	<div class="container">
+		<div class="back_button">
+			<a href="/"><h2>Home</h2></a>
+		</div>
 		<h1>My HCI Friends</h1>
 		{{#each friends}}
 			<div class="friend_container">
 				<img class="img-responsive" src="{{imageURL}}"/>
 				<a class="name_link" href="#"><h3 class="friend_name">{{name}}</h3></a>
 				<p class="description">{{description}}</p>
-				<a href="/deleteFriend?name={{name}}"><h5 class="delete_button">Delete</h5></a>
+				
 			<hr/>
 			</div>
 		{{/each}}
@@ -46,6 +50,7 @@
 		    </div>
 		    <input type="submit" id="submitBtn" class="btn btn-default" value="Add the friend"></input>
 		</form>
+
 	</div
 </body>
 </html>
